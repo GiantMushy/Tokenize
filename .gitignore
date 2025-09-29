@@ -1,1 +1,10 @@
 Repositories/obj/Debug/net9.0/Repositories.csproj.AssemblyReference.cache
+/Services/bin
+/Services/bin
+/Services/bin/Debug
+Services/bin/Debug/net9.0/Services.deps.json
+/Repositories/obj
+/Repositories/obj
+*.dll
+/Api/bin
+/Services/obj
