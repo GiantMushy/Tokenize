@@ -1,0 +1,12 @@
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/bin/Debug/net9.0/Repositories.deps.json
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/bin/Debug/net9.0/Repositories.dll
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/bin/Debug/net9.0/Repositories.pdb
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.GeneratedMSBuildEditorConfig.editorconfig
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.AssemblyInfoInputs.cache
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.AssemblyInfo.cs
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.csproj.CoreCompileInputs.cache
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.sourcelink.json
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.dll
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/refint/Repositories.dll
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/Repositories.pdb
+/Users/totomcfrodo/Documents/GitHub/Tokenize/Repositories/obj/Debug/net9.0/ref/Repositories.dll
