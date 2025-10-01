@@ -1,11 +1,17 @@
 using Models.Dtos;
 using Models.InputModels;
+using Repositories.Interfaces;
 using Services.Interfaces;
 
 namespace Services.Implementations;
 
 public class BookService : IBookService
 {
+    private readonly IBookRepo _bookRepo;
+    public BookService(IBookRepo bookRepo)
+    {
+        _bookRepo = bookRepo;
+    }
     // i. GetAllBooks: BookDto[]
     // ii. GetBookById: BookDetailsDto
     // iii. CreateBook: int
