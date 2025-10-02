@@ -11,7 +11,7 @@ using Repositories.Contexts;
 namespace Api.Migrations
 {
     [DbContext(typeof(TokenizeDbContext))]
-    [Migration("20251001183030_Initial")]
+    [Migration("20251002111508_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

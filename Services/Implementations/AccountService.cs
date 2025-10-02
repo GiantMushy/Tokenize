@@ -18,7 +18,7 @@ public class AccountService : IAccountService
     public AccountService(IAccountRepo accountRepo, IConfiguration configuration, IJwtTokenService jwtTokenService)
     {
         _accountRepo = accountRepo;
-        _salt = configuration.GetValue<string>("CookieAuthentication:Salt") ?? throw new ArgumentException("Salt not found in configuration.");
+        _salt = configuration.GetValue<string>("TokenAuthentication:Salt") ?? throw new ArgumentException("Salt not found in configuration.");
         _jwtTokenService = jwtTokenService;
     }
     // ii. Register: void
