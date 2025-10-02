@@ -39,7 +39,7 @@ public class BookRepo : IBookRepo
 
         if (book == null)
         {
-            throw new Exception("Book not found.");
+            throw new KeyNotFoundException("Book not found.");
         }
 
         return book;
@@ -63,7 +63,7 @@ public class BookRepo : IBookRepo
         var existingBook = _dbContext.Books.FirstOrDefault(b => b.Id == bookId);
         if (existingBook == null)
         {
-            throw new Exception("Book not found.");
+            throw new KeyNotFoundException("Book not found.");
         }
 
         existingBook.Name = book.Name;
