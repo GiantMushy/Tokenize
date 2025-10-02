@@ -19,22 +19,18 @@ public class BookService : IBookService
 
     public BookDto[] GetAllBooks()
     {
-        // Logic to retrieve all books
-        throw new NotImplementedException();
+        return _bookRepo.GetAllBooks();
     }
     public BookDetailsDto GetBookById(int id)
     {
-        // Logic to retrieve a book by its ID
-        throw new NotImplementedException();
+        return _bookRepo.GetBookById(id);
     }
     public int CreateBook(BookInputModel inputModel)
     {
-        // Logic to create a new book
-        throw new NotImplementedException();
+        return _bookRepo.CreateBook(inputModel);
     }
     public void UpdateBookById(int id, BookInputModel inputModel)
     {
-        // Logic to update an existing book by its ID
-        throw new NotImplementedException();
+        _bookRepo.UpdateBookById(id, inputModel);
     }
 }
