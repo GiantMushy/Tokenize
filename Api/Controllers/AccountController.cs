@@ -19,14 +19,32 @@ public class AccountController : ControllerBase
     [HttpPost("register")]
     public IActionResult Register([FromBody] RegisterInputModel registerInputModel)
     {
-        _accountService.Register(registerInputModel);
-        return Created();
+        try
+        {
+            _accountService.Register(registerInputModel);
+            return Created();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginInputModel loginInputModel)
     {
-        var token = _accountService.Login(loginInputModel);
-        return string.IsNullOrEmpty(token) ? Unauthorized() : Ok(token);
+        try
+        {
+            var token = _accountService.Login(loginInputModel);
+            return string.IsNullOrEmpty(token) ? Unauthorized() : Ok(token);
+        }
+        catch (UnauthorizedAccessException ex)
+        {
+            return Unauthorized(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 }

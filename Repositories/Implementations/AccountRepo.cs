@@ -37,7 +37,7 @@ public class AccountRepo : IAccountRepo
 
         if (user == null)
         {
-            throw new Exception("Invalid email or password.");
+            throw new UnauthorizedAccessException("Invalid email or password.");
         }
 
         return new UserDto
